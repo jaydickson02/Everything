@@ -17,17 +17,16 @@ The government operates a large cathedral like building. This building sits atop
 The people here practice a number of religions but primarily they are partial to the great Al-Kalim the immortal warrior of the desert.
 
 #### [[The Catacombs]]
-Bellow Scorpians Rest are a network of Catacombs, these lead to various locations under the city and are used primarily to the citys aquaducts and are used for passive cooling of the city. They are well mapped out but the ancient map in the parties possesion can allow for the creation of the Map to [[The Shrine of the Scorpion]] which depicts a secret path in [[The Catacombs]].
+Bellow Scorpions Rest are a network of Catacombs, these lead to various locations under the city and are used primarily to the city's aqueducts and are used for passive cooling of the city. They are well mapped out but the ancient map in the parties possession can allow for the creation of the Map to [[The Shrine of the Scorpion]] which depicts a secret path in [[The Catacombs]].
 
 #### Stores/Artisans
-The city offers many goods and services. The price is fair and the merchants are eager to barter. 
+The city offers many goods and services. The price is fair and the merchants are eager to barter.
 
-- Mapmaking 
-	- [[Quills Cartography]] is home to the best cartographer around here ask anyone!
-- Taverns 
-	- [[The Thorny Cactus]] up North on the the 3rd level serves the best ale in the dessert
-	- [[Sandy Squire]] it's quaint and more expensive but at least its less rowdy!
-- Smiths
-	- [[Grove's Steel Goods]], a fine seller of armor and weapons/
-	- [[Sam's Gun Den]], practice your shooting and win the finest hand gun in the desert.
-- 
+##### Mapmaking 
+- [[Quills Cartography]] is home to the best cartographer around here ask anyone!
+##### Taverns 
+- [[The Thorny Cactus]] up North on the the 3rd level serves the best ale in the dessert
+- [[Sandy Squire]] it's quaint and more expensive but at least its less rowdy!
+##### Smiths
+- [[Grove's Steel Goods]], a fine seller of armor and weapons/
+- [[Sam's Gun Den]], practice your shooting and win the finest hand gun in the desert.

@@ -23,4 +23,4 @@ The great city is home to much knowledge, many great libraries are present throu
 Even amongst all the knowledge stored in the mirage city, much of it depicting evil as often as good. There is a place deep in the city that hold forbidden knowledge deemed too dangerous for nearly anyone's eyes. This knowledge is hidden within [[The Forbidden Library]].
 
 #### The [[Mechanical Heart]]
-It is a magnificent building that moves with the cities changes. The heart houses the relics that allow the city to move and hide as it does. This is also the source of the mirage and most of the cities power, short of the conciousness that resides in [[The Central Ziggurat]].
+It is a magnificent building that moves with the cities changes. The heart houses the relics that allow the city to move and hide as it does. This is also the source of the mirage and most of the cities power, short of the consciousness that resides in [[The Central Ziggurat]].
