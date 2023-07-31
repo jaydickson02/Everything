@@ -6,7 +6,7 @@ The city is built into a large canyon and it stretches upwards with shops and bu
 
 
 #### Shrine
-Located deep in [[The Catacombs]] of the city is the relic known as the [[Eye of the Desert]], it is said that this eye was what allowed this city to have settled here in the first place. The Eye was lost long ago but there are some still who may have the clues needed to find it. It can be found at [[The Shrine of the Scorpion]].
+Located deep in [[The Catacombs]] of the city is the relic known as the [[Eye of the Desert]], it is said that this eye was what allowed this city to have settled here in the first place. The Eye was lost long ago but there are some still who may have the clues needed to find it. It can be found at [[The Shrine]].
 
 #### Politics
 The City is managed day to day by a governing body. This body is elected by the city elders. The elders are previous members of the governing body that have devoted their lives to the city and its people.
@@ -17,7 +17,7 @@ The government operates a large cathedral like building. This building sits atop
 The people here practice a number of religions but primarily they are partial to the great Al-Kalim the immortal warrior of the desert.
 
 #### [[The Catacombs]]
-Bellow Scorpions Rest are a network of Catacombs, these lead to various locations under the city and are used primarily to the city's aqueducts and are used for passive cooling of the city. They are well mapped out but the ancient map in the parties possession can allow for the creation of the Map to [[The Shrine of the Scorpion]] which depicts a secret path in [[The Catacombs]].
+Bellow Scorpions Rest are a network of Catacombs, these lead to various locations under the city and are used primarily to the city's aqueducts and are used for passive cooling of the city. They are well mapped out but the ancient map in the parties possession can allow for the creation of the Map to [[The Shrine]] which depicts a secret path in [[The Catacombs]].
 
 #### Stores/Artisans
 The city offers many goods and services. The price is fair and the merchants are eager to barter.

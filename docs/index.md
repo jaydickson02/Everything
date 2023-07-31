@@ -4,7 +4,7 @@ This campaign will lead the party on an arduous journey through an expansive des
 
 #### **The [[Eye of the Desert]]
 
-The party's first task is to recover the "[[Eye of the Desert]]," an artifact rumored to have been the founding pillar allowing for the existence of life in this desert. The party explores and learns of the many myths surrounding the city. One of which is the [[Eye of the Desert]]. Upon asking members of the public about the map many direct the party to [[Quill]]. He is a mapmaker, who when given the ancient map the party possesses, can provide a comprehensive map to [[The Shrine of the Scorpion]]. 
+The party's first task is to recover the "[[Eye of the Desert]]," an artifact rumored to have been the founding pillar allowing for the existence of life in this desert. The party explores and learns of the many myths surrounding the city. One of which is the [[Eye of the Desert]]. Upon asking members of the public about the map many direct the party to [[Quill]]. He is a mapmaker, who when given the ancient map the party possesses, can provide a comprehensive map to [[The Shrine]]. 
 
 Within the treacherous catacombs, they face dangerous traps and venomous beasts. Upon retrieving the artifact, they encounter a territorial beast known as [[The Canyon Serpent]], providing an exhilarating challenge.
 
