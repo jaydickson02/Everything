@@ -10,11 +10,11 @@ Within the treacherous catacombs, they face dangerous traps and venomous beasts.
 
 #### **Finding The [[Mirage City]]**
 
-After escaping [[the catacombs]] the [[Elder Yasmine]] will locate the party. She will enquire about the Eye and share what she suspects of its powers and source. She will offer to take it and have the text transcribed by her best scholars.
+After escaping [[the catacombs]], [[Yasmine]] will locate the party. She will enquire about the Eye and share what she suspects of its powers and source. She will offer to take it and have the text transcribed by her best scholars.
 
-Successful retrieval of the Eye also attracts [[Leora]]'s attention, she is a politician vying for the power Yasmine has earned. Her hidden, ruthless ambition is to seize control of the city. She will introduce herself and explain her stance - specifically how she fears the city is falling to ruin with its dwindling water supply and that Yasmine's bureaucracy and compassion prevents her taking the necessary steps to put it right.
+Successful retrieval of the [[Eye of the Desert]] also attracts [[Leora]]'s attention, she is a politician vying for the power Yasmine has earned. Her hidden, ruthless ambition is to seize control of the city. She will introduce herself and explain her stance - specifically how she fears the city is falling to ruin with its dwindling water supply and that Yasmine's bureaucracy and compassion prevents her taking the necessary steps to put it right.
 
-The following day the [[Elder Yasmine]] will return with the eye and a successful transcription. She will ask the party to follow its clues and express her belief that this relic could be the key to saving the city. She believes the key to unlocking its powers lie on the path outlined by the inscription.
+The following day [[Yasmine]] will return with the eye and a successful transcription. She will ask the party to follow its clues and express her belief that this relic could be the key to saving the city. She believes the key to unlocking its powers lie on the path outlined by the inscription.
 
 This will put the party on the path to finding the [[Mirage City]]. Specifically, the main clue being to search out [[the Parched Peak]]. 
 
@@ -24,11 +24,11 @@ Before the party leaves the city [[Leora]] will again approach them. She will ma
 
 Navigating through the desert will be challenging. The party will face numerous threats, including venomous [[Sand Scorpions]] and a group of opportunistic [[Desert Bandits]]. [[The Shifting Dunes]] are a treacherous maze that tests the party's survival and navigation skills. However, assistance might be found at [[The Oasis]] Sanctuary, a haven protected by [[Jara]], [[The Oasis]] nymph, and her elemental kin.
 
-Another such entity they may find roaming the desert is [[Taren, the desert's ghost]]. He can provide limited guidance to the party if needed.
+Another such entity they may find roaming the desert is [[Taren]]. He can provide limited guidance to the party if needed.
 
 On the journey to the Peak, they meet [[Rahim]], a trader who provides valuable supplies, and situated next to the peak is [[Karis]], the Astronomer, who will help decipher the celestial signs and alert them to [[Zephyr]] tracking them. 
 
-The party may then approach [[Zephyr]] while he sleeps. This could go a number of ways but the best outcome is they talk to him and find he has been having doubts regarding his allegiance. If convinced he will reveal [[Leora]]'s entire plan and tell them how it had included an attempt on the [[Elder Yasmine]]'s life. He will join them if convinced to change sides.
+The party may then approach [[Zephyr]] while he sleeps. This could go a number of ways but the best outcome is they talk to him and find he has been having doubts regarding his allegiance. If convinced he will reveal [[Leora]]'s entire plan and tell them how it had included an attempt on [[Yasmine]]'s life. He will join them if convinced to change sides.
 
 #### **The [[Mirage City]] Revealed**
 
