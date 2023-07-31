@@ -2,9 +2,9 @@
 
 This campaign will lead the party on an arduous journey through an expansive desert, guided by cryptic clues, ancient astronomy, and their own intuition in search of the [[Mirage City]]. An ancient civilization, renowned for their thirst for knowledge and preservation of wisdom, reputedly built the city. Their history is shrouded in mystery, their power seemingly lost to the sands of time.
 
-#### **Minor Task: The [[Eye of the Scorpion]]**
+#### **The [[Eye of the Scorpion]]**
 
-The party's first task is to recover the "[[Eye of the Scorpion]]," an artifact rumored to have been the founding pillar allowing for the existence of life in this desert. [[Elder Yasmine]], a respected local figure, shares the legend of the artifact. She directs the party to [[Quill]], the Mapmaker, who when given given the ancient map the party possesses. Can provide a comprehensive map to [[The Shrine of the Scorpion]]. Within the treacherous catacombs, they face dangerous traps, venomous beasts, and the formidable Spectral Guardian. Upon retrieving the artifact, they encounter a territorial beast known as [[The Canyon Serpent]], providing an exhilarating challenge.
+The party's first task is to recover the "[[Eye of the Scorpion]]," an artifact rumored to have been the founding pillar allowing for the existence of life in this desert. [[Elder Yasmine]], a respected local figure, shares the legend of the artifact. She directs the party to [[Quill]], the Mapmaker, who when given given the ancient map the party possesses, can provide a comprehensive map to [[The Shrine of the Scorpion]]. Within the treacherous catacombs, they face dangerous traps, venomous beasts, and the formidable Spectral Guardian. Upon retrieving the artifact, they encounter a territorial beast known as [[The Canyon Serpent]], providing an exhilarating challenge.
 
 #### **Finding The [[Mirage City]]**
 
