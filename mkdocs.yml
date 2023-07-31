@@ -2,13 +2,15 @@ site_name: The Desert Mirage
 
 theme:
     name: 'material'
+    icon:
+        logo: octicons/book-24
+    favicon: images/favicon.png
     palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: rgb(34, 39, 46)
-      accent: indigo
+      primary: amber
+      accent: purple
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -16,8 +18,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: rgb(34, 39, 46)
-      accent: blue
+      primary: amber
+      accent: purple
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -51,7 +53,8 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks 
-
+  
+copyright: Copyright &copy; 2023 Jay Dickson
 
 extra_javascript:
   - javascripts/mathjax.js
