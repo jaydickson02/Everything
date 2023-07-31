@@ -1,1 +1,1 @@
-Shop keep for [[Tattles Travel Wares]].
+Shop keep for [[Tattle's Travel Wares]].

@@ -31,4 +31,4 @@ The city offers many goods and services. The price is fair and the merchants are
 - [[Grove's Steel Goods]], a fine seller of armor and weapons.
 - [[Sam's Gun Den]], practice your shooting and win the finest hand gun in the desert.
 ##### Clothing/Apparel
-- [[Tattles Travel Wares]], need to keep cool in the desert. Look no further.
+- [[Tattle's Travel Wares]], need to keep cool in the desert. Look no further.
