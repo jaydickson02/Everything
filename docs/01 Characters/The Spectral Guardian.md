@@ -1,1 +1,1 @@
-The Guardian of [[The Shrine of the Scorpion]], it is silent and deadly, programmed to defend the [[Eye of the Scorpion]] against anyone it deems unworthy.
+The Guardian of [[The Shrine of the Scorpion]], it is silent and deadly, programmed to defend the [[Eye of the Desert]] against anyone it deems unworthy.

@@ -4,4 +4,4 @@ Here the party will find a set of relics that allow safe transportation through 
 
 One of these is the [[Ring of the Pathseeker]], a second is the [[Mirage Seal]].
 
-The [[Eye of the Scorpion]] will begin to glow and resonate if brought here. It will now be recharged and can be used again.
+The [[Eye of the Desert]] will begin to glow and resonate if brought here. It will now be recharged and can be used again.

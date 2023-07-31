@@ -1,4 +1,4 @@
-The respected elder of Scorpion's Rest. She is knowledgeable about the local lore, and while initially skeptical of the party, she can become a helpful ally. She prompts the party to travel to the [[Mirage City]], to restore the power of the [[Eye of the Scorpion]].
+The respected elder of Scorpion's Rest. She is knowledgeable about the local lore, and while initially skeptical of the party, she can become a helpful ally. She prompts the party to travel to the [[Mirage City]], to restore the power of the [[Eye of the Desert]].
 
 ![[Elder Yasmine.png]]
 

@@ -1,4 +1,4 @@
-This small city on the edge of the desert serves as the campaign's starting point. It's a hub for adventurers and traders, brimming with rumors about the desert and its secrets. It is also home to the shrine holding the [[Eye of the Scorpion]].
+This small city on the edge of the desert serves as the campaign's starting point. It's a hub for adventurers and traders, brimming with rumors about the desert and its secrets. It is also home to the shrine holding the [[Eye of the Desert]].
 
 The city is built into a large canyon and it stretches upwards with shops and buildings cut into the sides of the canyon walls.  Connecting them is a mismatched jumble of sandstone bridges, wooden walkways and rickety rope bridges. A river flows at the bottom of the canyon providing water for the residents. The general population are united in their concern regarding the continued shrinking of the river and its water supply.
 
@@ -6,7 +6,7 @@ The city is built into a large canyon and it stretches upwards with shops and bu
 
 
 #### Shrine
-Located deep in [[The Catacombs]] of the city is the relic known as the [[Eye of the Scorpion]], it is said that this eye was what allowed this city to have settled here in the first place. The Eye was lost long ago but there are some still who may have the clues needed to find it. It can be found at [[The Shrine of the Scorpion]].
+Located deep in [[The Catacombs]] of the city is the relic known as the [[Eye of the Desert]], it is said that this eye was what allowed this city to have settled here in the first place. The Eye was lost long ago but there are some still who may have the clues needed to find it. It can be found at [[The Shrine of the Scorpion]].
 
 #### Politics
 The City is managed day to day by a governing body. This body is elected by the city elders. The elders are previous members of the governing body that have devoted their lives to the city and its people.
