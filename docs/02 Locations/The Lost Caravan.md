@@ -1,0 +1,1 @@
+The remains of an ill-fated expedition that attempted to find the [[Mirage City]]. It provides crucial supplies and evidence of the desert's dangers.

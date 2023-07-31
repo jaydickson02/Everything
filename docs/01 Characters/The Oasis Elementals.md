@@ -1,0 +1,1 @@
+Peaceful nature spirits guarding [[The Oasis]] Sanctuary, they are gentle and wise, willing to aid those who respect their sanctuary.

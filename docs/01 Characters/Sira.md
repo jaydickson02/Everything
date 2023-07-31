@@ -1,0 +1,1 @@
+The spirit of [[The Lost Caravan]]'s leader, she is regretful and solemn, eager to help others avoid her fate. She can provide the party with essential survival supplies and information.

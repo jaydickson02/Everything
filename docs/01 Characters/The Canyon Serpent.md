@@ -1,0 +1,1 @@
+A gigantic and territorial beast that dwells near [[The Shrine of the Scorpion]]. This creature provides a challenging early encounter for the party.

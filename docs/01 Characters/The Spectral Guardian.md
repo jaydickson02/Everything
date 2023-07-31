@@ -1,0 +1,1 @@
+The Guardian of [[The Shrine of the Scorpion]], it is silent and deadly, programmed to defend the [[Eye of the Scorpion]] against anyone it deems unworthy.

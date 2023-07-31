@@ -1,0 +1,1 @@
+An old, semi-ruined shrine to a forgotten deity that the wandering spirit calls home. Inside, it's filled with strange and cryptic carvings.

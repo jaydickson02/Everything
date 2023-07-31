@@ -1,0 +1,1 @@
+A treacherous expanse of desert that must be traversed to reach the [[Mirage City]]. It is home to various desert creatures and shifting sands that make navigation difficult.

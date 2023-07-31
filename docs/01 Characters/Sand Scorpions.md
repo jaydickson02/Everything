@@ -1,0 +1,1 @@
+A pack of venomous creatures living in [[The Shifting Dunes]]. These creatures can cause trouble for the party during their desert journey.

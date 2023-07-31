@@ -1,0 +1,1 @@
+The final spectral protector of the [[Mirage City]]. It is enigmatic and challenging, designed to test the adventurers' resolve and worthiness.

@@ -1,0 +1,1 @@
+This ring gives the barer complete knowledge of the quickest path through the city to any destination. Additionally, while wearing this ring the cities defenses will not be triggered by you. Further, the city may provide support towards the wearers of the rings.

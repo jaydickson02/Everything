@@ -1,0 +1,1 @@
+Spectral inhabitants of the [[Mirage City]] that guard its many libraries. They test the party's knowledge and respect for the wisdom they protect.

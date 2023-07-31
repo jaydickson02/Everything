@@ -1,0 +1,1 @@
+A group of opportunistic bandits in the desert who attempt to rob the party, providing a non-monster encounter in [[The Shifting Dunes]].

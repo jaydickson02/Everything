@@ -1,0 +1,1 @@
+A guardian construct in the form of a minotaur, patrolling the [[Mirage City]]. It provides a physical and intellectual challenge with its strength and riddles.
