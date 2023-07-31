@@ -4,7 +4,6 @@ theme:
     name: 'material'
     icon:
         logo: octicons/book-24
-    favicon: images/favicon.png
     palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
