@@ -2,4 +2,4 @@ The place to be for quality ale in [[Scorpions Rest]]. Most all of the denizens 
 
 The rooms are often full here. Frequently, used by customers avoiding the trek home after one to many.
 
-If a room is unavailable perhaps [[the Thorny Cactus]] has one available.
+If a room is unavailable perhaps [[The Thorny Cactus]] has one available.

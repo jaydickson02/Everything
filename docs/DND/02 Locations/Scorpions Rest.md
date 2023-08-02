@@ -1,4 +1,4 @@
-This small city on the edge of the desert serves as the campaign's starting point. It's a hub for adventurers and traders, brimming with rumors about the desert and its secrets. It is also home to [[the shrine]] holding the [[Eye of the Desert]].
+This small city on the edge of the desert serves as the campaign's starting point. It's a hub for adventurers and traders, brimming with rumors about the desert and its secrets. It is also home to [[The Shrine]] holding the [[Eye of the Desert]].
 
 The city is built into a large canyon and it stretches upwards with shops and buildings cut into the sides of the canyon walls.  Connecting them is a mismatched jumble of sandstone bridges, wooden walkways and rickety rope bridges. A river flows at the bottom of the canyon providing water for the residents. The general population are united in their concern regarding the continued shrinking of the river and its water supply.
 
