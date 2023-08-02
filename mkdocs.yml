@@ -1,4 +1,4 @@
-site_name: The Desert Mirage
+site_name: Everything
 
 theme:
     name: 'material'
@@ -8,7 +8,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: amber
+      primary: indigo
       accent: purple
       toggle:
         icon: material/toggle-switch-off-outline
@@ -17,7 +17,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: amber
+      primary: indigo
       accent: purple
       toggle:
         icon: material/toggle-switch
