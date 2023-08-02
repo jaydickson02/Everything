@@ -1,0 +1,1 @@
+Once per turn as a bonus action you can fold the cloak around yourself and teleport 15ft to an unoccupied location. As a reaction you can use this cloak to increase your AC by +3.

@@ -1,0 +1,1 @@
+While wearing the headband you feel the power of the elements flow through you. Feeling empowered by this all bare handed attacks increase by 1d4. You gain a +2 to hit.
