@@ -1,16 +1,13 @@
----
-layout: post
-title:  "Aerospace Finite Element Methods"
----
 
-# What is Finite Element Analysis
+
+## What is Finite Element Analysis
 
 - The FE method involves breaking a structure into several elements (pieces of the structure)
 - Describing the behavior of each element in a simple way.
 - Elements are then reconnected at nodes (nodes hold elements together list glue)
 - The process results in a set of up to several thousands of simultaneous equilibrium equations, which require a computer to solve.
 
-## Brief History of FEM
+### Brief History of FEM
 
 - Courant (1943) first developed FEM to solve the problem of torsion of a hollow shaft with a rectangular cross-section.
 - Subdivision of cross-section into small triangular sub-sections with linear approximations for displacement over each triangle.
@@ -20,14 +17,14 @@ title:  "Aerospace Finite Element Methods"
 - Is used on all kind of computers from PC to supercomputers with parallel processing.
 - For aerospace companies (Airbus, Boeing) and research teams, ABAQUS is often the main commercial software package.
 
-## Finite Element Method
+### Finite Element Method
 
 - The behavior of complex structures cannot be solved using analytical methods.
 - Finite Element Analysis (FEA) is a numerical method that breaks down a structure into  discrete elements.
 - The behavior of each discrete element can be calculated.
 - The global response of the structure is observed by combining the results of each finite element.
 
-## FEA can solve a variety of problems
+### FEA can solve a variety of problems
 
 - Deformation analysis
 - Stress Analysis
@@ -39,20 +36,20 @@ title:  "Aerospace Finite Element Methods"
 	- Complex situations (constraints, boundary conditions)
 	- Various physics (structural, thermal, acoustics, etc)
 
-## Analysis Types
+### Analysis Types
 
 What separates Engineers from Scientists:
-### Scientific Analysis:
+#### Scientific Analysis:
   - As accurate as **possible**
   - Looks at **future** technical applications
   - Driven by a want to just expand knowledge
 
-### Engineering Analysis:
+#### Engineering Analysis:
   - As accurate as **required**
   - Looks at **Current** technical applications
   - Is commercially driven
 
-# Approximations in FAE
+### Approximations in FAE
 
 - An object is manufactured out of metallic material. Any metal consists of atoms in a crystal structure. Atoms are discrete, not continuous.
 - Mathematical models solve structural and vibrational problems assuming that the object acts as continuous object.
@@ -60,7 +57,7 @@ What separates Engineers from Scientists:
 - Only simple mathematical problems can be solved analytically.
 - Complex equations are solved through numerical methods.
 
-# Numerical Methods
+## Numerical Methods
 
 - Mathematical model is solved approximately
 - Final Difference Method
@@ -76,12 +73,12 @@ What separates Engineers from Scientists:
   - Used in all fields of engineering and science today
 - Methods differ by **how** they divide the space to be analyzed.
 
-# Truess Structures
+## Truess Structures
 
 Truss Structures consist of truss members, i.e. bars that can be loaded only axially. There is no bending allowed, In practice, 
 the connection of trusses in the joints has to be such that the requirement of axial loading can be satisfied.
 
-## Why Start with Truss Elements?
+### Why Start with Truss Elements?
 
 - Truss elements are often used in constriction.
 - Trusses belong to the class of skeletal structures and consist of members connected at joints.
@@ -90,14 +87,14 @@ the connection of trusses in the joints has to be such that the requirement of a
 - FEM will give the exact same answer as your hand calculation.
 - Therefore, truss element structures are the ideal choice to introduce computer-oriented terminology and explain the fully-automated numerical solution method.
 
-# Derivation of the Stiffness Matrix
+## Derivation of the Stiffness Matrix
 
 Three methods to be introduced:
 1. Direct observations (Trusses)
 2. Unit displacement method (Trusses and beams)
 3. Method of virtual work (All Elements)
 
-## Direct Observations
+### Direct Observations
 
 Bar/Truss elements
 - 1D truss element defined by length L, cross-section A and stiffness E
@@ -146,7 +143,7 @@ e is the element number. So what part of the structure we are considering. We ha
 - K: Element stiffness matrix, u: displacement vector, f: force vector
 - Equilibrium: $f_1 = -f_2$, but system is free to move (no boundary conditions)
 
-## Stiffness in Stuctures
+### Stiffness in Stuctures
 
 A material has a value for stiffness which is given by Youngs modulus. For a structure which will act differently depending on its geometry such as length and cross-sectional area we can use Hooke's law to calculate a structural spring constant.
 
@@ -171,7 +168,7 @@ Which is the displacement at node 1 due to a force at node 2
 We use a matrix to represent all these k values for the various relevant stiffness values.
 
 
-## Method of Virtual Work
+### Method of Virtual Work
 
 **Definition:** Virtual displacement is a change in the configuration of a system as
 the result of any arbitrary infinitesimal **‘admissible displacement $\delta u$’** (change
@@ -191,7 +188,7 @@ displacement, or “what happens if” displacement.
 was mathematically formulated by Bernoulli (1667-1748).
 
 
-### Method
+#### Method
 
 Truss Elements
 - Truss under virtual end-displacement $\delta W_{\mathrm{e}}=\delta W_{\mathrm{int}}$

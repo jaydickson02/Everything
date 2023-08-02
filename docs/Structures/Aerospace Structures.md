@@ -1,10 +1,10 @@
 
-# Intro to Structural Analysis
+## Intro to Structural Analysis
 
 Content Tags: Hookes Law, Internal Loads, Strain, Stress, Supports
 Created: March 6, 2022 9:10 AM
 
-## Stress
+### Stress
 
 - Stress on a small element of a material under load
 - 2 types of stresses:
@@ -13,57 +13,57 @@ Created: March 6, 2022 9:10 AM
 - Ask what does a load do to a cross section?
   - What loads are there? Moments? Stresses?
 
-## Shear and Normal stress produce fundamentally different forces in the material
+### Shear and Normal stress produce fundamentally different forces in the material
 
 - Normal is a compressive or stretching action
 - Shear is considered as though it acts on a plane
 
-## What is strain? What are the units of strain?
+### What is strain? What are the units of strain?
 
 - Strain is a change in material distortion under the effect of a stress
 - The units are dimensionless (Change in Length/Length)
 
-## What is normal strain? What is shear strain?
+### What is normal strain? What is shear strain?
 
 - Normal strain acts through the cross section of the body to lengthen or contract it
 - Shear strain creates torsion and warping
 
-## What is a positive and negative normal strain?
+### What is a positive and negative normal strain?
 
 - Positive normal acts in torsion
 - Negative acts to compress
 
-## What is a positive and negative shear strain?
+### What is a positive and negative shear strain?
 
 - Positive and negative only alters the direction of the torsion. So clockwise or counter-clockwise
 
-## Normal Strain is?
+### Normal Strain is?
 
 - The slope of displacement
 
-## Shear Strain is? 
+### Shear Strain is? 
 
 - Still non-dimensional
 - Relationship??
 
-## Poisson’s ratio?
+### Poisson’s ratio?
 
 - Ratio of strains. Reaction strain acting in orthogonal direction is cause by original strain.
 
-## Hooke’s Law?
+### Hooke’s Law?
 
 - Constant Value = Stress/Strain, while elastic.
 
-## Plane (2D) Problems
+### Plane (2D) Problems
 
 - Disregard a particular aspect because nothing important is happening in the other access out of plane. This needs to be carefully evaluated.
 
-## Beams and Plates
+### Beams and Plates
 
 - Take a beam and extrude it for plates
 - Plates have a poisson effect that beams don’t have
 
-## 2D State of Stress
+### 2D State of Stress
 
 - Your stresses are dependant on your coordinate system
 - Can resolve state of stress into principal stress
@@ -71,30 +71,30 @@ Created: March 6, 2022 9:10 AM
 - A cylinder under normal tension will fracture vertically
 - A cylinder under shear will fracture diagonally. Imagine the shear diagram deforming a square into a kite shape.
 
-## Aircraft Materials
+### Aircraft Materials
 
 - Common Materials:
   - Metals (Most discussed)
   - composites
   - Sandwich
 
-## Static Equivalence
+### Static Equivalence
 
 - Same forces and same moments
 - Internal loads must be equivalent to the external load that is acting on the body.
 - Internal reaction loads are equal and opposite. The internal loads are not.
 
-## Partial Derivative
+### Partial Derivative
 
 - The partial derivative is the derivative of a function with respect to one variable only
 - This gives the rate of change, or slope, of a function with respect to one variable
 
-## Support Conditions
+### Support Conditions
 
 - Import drawings for supports. (Roller, Fixed, Pin). Add degree of freedom info.
 - Rollers always provide a force in the Y direction regardless of the sign of the force. Not in the X direction. Or vice versa depending on the unit system.
 
-## Internal Loads
+### Internal Loads
 
 - 4 Types of internal loads:
   - Normal (N)
@@ -102,18 +102,18 @@ Created: March 6, 2022 9:10 AM
   - Torsional (T)
   - Bending (M)
 
-## Force and Moment Diagrams
+### Force and Moment Diagrams
 
 - Take a slice and determine the shear force and moment at that point (This is important for this course)
 
 ---
 
-# Euler Buckling
+## Euler Buckling
 
 
 Created: April 28, 2022 11:02 AM
 
-## Euler Column Theory
+### Euler Column Theory
 
 - Valid, within the limits of assumptions
 - Based on a perfect stable section column
@@ -129,13 +129,13 @@ Created: April 28, 2022 11:02 AM
 - Load associated with buckling is $P_{CR}$
 - If column is displaced by lateral load F
 
-## Derivation of Euler Buckling Equation
+### Derivation of Euler Buckling Equation
 
 ![Untitled](AerospaceStructuresMedia/Untitled%201.png)
 
 ![Untitled](AerospaceStructuresMedia/Untitled%202.png)
 
-## Buckling Modes
+### Buckling Modes
 
 - Each n buckling mode (displacement shape) has an associated buckling load
 - n = number of “half waves” in buckling mode shape
@@ -144,11 +144,11 @@ $$
 P_{CR} = {n^2\pi^2EI\over L^2}
 $$
 
-## Effective Length
+### Effective Length
 
 ![Untitled](AerospaceStructuresMedia/Untitled%203.png)
 
-## End Fixity
+### End Fixity
 
 - How the ends of the columns are restrained
 - Most columns have some form of restraint (end fixity)
@@ -156,23 +156,23 @@ $$
 
 ![Untitled](AerospaceStructuresMedia/Untitled%204.png)
 
-## Second Moment of Area
+### Second Moment of Area
 
 ![Untitled](AerospaceStructuresMedia/Untitled%205.png)
 
 - Buckling always occurs around the axis of $I_{min}$
 
-## Stress Form of Buckling Equation
+### Stress Form of Buckling Equation
 
 ![Untitled](AerospaceStructuresMedia/Untitled%206.png)
 
-## Column Curve
+### Column Curve
 
 ![Untitled](AerospaceStructuresMedia/Untitled%207.png)
 
-# Inelastic Buckling
+## Inelastic Buckling
 
-## Column Curve Ranges
+### Column Curve Ranges
 
 - Metal material behaviour is non-linear following yield or elastic limit
 - "Long" columns buckle when material is still in elastic region
@@ -180,7 +180,7 @@ $$
 - Euler theory will over-estimate the buckling stress in the case of a "short" column
 - Very short columns (L'/$\rho$ ~ 10) fail by crushing, or "block compression"
 
-## Empirical Short Column Equations
+### Empirical Short Column Equations
 
 - Empirical (test-based) relationships developed for buckling of thin-walled sections (which incorporates local buckling)
 - Column curve is a structural response (not material)
@@ -205,7 +205,7 @@ $$
   - Determined analytically or semi-empirically
   - Found using data sheets (e.g. ESDU), standards (e.g. MIL-HDBK), etc
 
-## Euler-Johnson Equation
+### Euler-Johnson Equation
 
 - A type of parabolic short column equation
 
@@ -213,7 +213,7 @@ $$
 \sigma_{CR} = \sigma_{c0}[1-{\sigma_{c0} \over 4 \pi^2E}\cdot({L' \over \rho})^2]
 $$
 
-## Inelastic Plate Buckling
+### Inelastic Plate Buckling
 
 - Elastic-plastic behaviour for metals affects buckling
   - Similar behaviour previously seen for columns
@@ -228,15 +228,15 @@ $$
 
 - Then simply use the above inelastic equation depending on the situation (Linear, Parabolic, Euler-Johnson)
 
-# Plate and Local Buckling
+## Plate and Local Buckling
 
-## Flexural Buckling
+### Flexural Buckling
 
 - Global Buckling
   - Primary instability mode of the entire column, or instability due to overall column bending
     - Characteristic length ~ distance between supports
 
-## Rectangular Plates in Shear
+### Rectangular Plates in Shear
 
 - Buckling in shear is determined from the same equation
   - Analytical derivation of buckling not considered here
@@ -248,7 +248,7 @@ $$
 - $\sigma_{cr} = {KE  ({t \over b})^2}$
 ![Shear k.png](https://supernotes-resources.s3.amazonaws.com/image-uploads/fe508ed6-7ee9-4c97-a894-9300bf3580f2--Shear%20k.png)
 
-## Rectangular Plates in Compression
+### Rectangular Plates in Compression
 
 - With plates we need to more carefully consider which mode of buckling will be take the least amount of energy.
   - Across the width of the plate mode 1 is still the lowest so only one half wave will be present
@@ -261,7 +261,7 @@ $$
 - $K_{\infty}$ is a good approximate for really skinny plates.
 ![k boundary.png](https://supernotes-resources.s3.amazonaws.com/image-uploads/80b40aaa-9d7f-4c82-adcb-eccae9b9424f--k%20boundary.png)
 
-## Plate Buckling Stress
+### Plate Buckling Stress
 
 - Compression and shear stresses on a plate can lead to buckling
 - Buckling load of a flat plate is dependant on
@@ -282,7 +282,7 @@ Where,
 - $({t\over b})$ is the ratio of the plate thickness to width. 
 - **b is always the width of the loaded edge regardless of orientation for compression buckling**
 
-## Local Buckling
+### Local Buckling
 
 - Occurs when the column acts like a collection of square plates. Common in thin-walled structures.
 - Thin-wall panels can buckle before or after flexural buckling
@@ -297,9 +297,9 @@ Where,
 - In both cases the restraint should vary between a fixed and simple support
 - Simple support can be assumed for conservative estimates unless the condition is known or given
 
-# Bending
+## Bending
 
-## Bending Stresses
+### Bending Stresses
 
 - Bending of a beam causes compression and tension stresses on a cross-section (bending stresses)
 - These are direct stresses, normal to the cross-section
@@ -310,7 +310,7 @@ Where,
     - The two in-plane axes of a cross-section
     - bend axes, moment, stress distribution, resists all change
 
-## Symmetric Bending
+### Symmetric Bending
 
 - Symmetric Bending occurs for bending of beams with one or two axes of symmetry
     - Axis of symmetry = “mirror plane”
@@ -318,7 +318,7 @@ Where,
 - Uses equation: $\sigma _{bending} = {M_{bending} \over I_x} y$
 - For bending in two seperate axis we can calculate the stress for both and simply add them. Direct stress can also be added.
 
-## Asymmetric Bending Equation
+### Asymmetric Bending Equation
 
 - Bending always relates to a centroid coordinate system
 - General equation for bending stress:
@@ -329,34 +329,34 @@ $$
 
 Works for any bending problem. Including symmetric bending and single moment bending.
 
-## Bending Sign Convention
+### Bending Sign Convention
 
 
 ![Sign Convention.png](https://supernotes-resources.s3.amazonaws.com/image-uploads/fb585ac7-821a-4dbc-95b5-2b6da58f9f9c--Sign%20Convention.png)
 
-# Thin Wall Assumptions
+## Thin Wall Assumptions
 
-### Equations
+#### Equations
 
 | Equation | Explanation | Variables |
 | --- | --- | --- |
 |  $I_{x} = {bd^3\over 12}$ | Second Moment of Inertia for a rectangle, measured from the x axis.  | d is the direction perpendicular to the y axis. |
 | $I_{x} = {b^3d\over 12}$  | Second Moment of Inertia for a rectangle, measured from the y axis.  | b is the direction perpendicular to the x axis. |
 
-### Properties of Plane sections
+#### Properties of Plane sections
 
 - First Moment of Area (important for centroids)
 - Second Moment of Area
 - Rotation of Axes
 - Parallel axis theorem
 
-### Stiffened Structures
+#### Stiffened Structures
 
 - Consist of two structural elements, which can be assumed to perform seperate functions.
 
-# Shear
+## Shear
 
-## Shear flow
+### Shear flow
 - Force on Length
 
 $$
