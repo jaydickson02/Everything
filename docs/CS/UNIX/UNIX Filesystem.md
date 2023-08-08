@@ -1,0 +1,15 @@
+	/bin   -   User Binaries 
+	/sbin  -   System Binaries
+	/etc   -   Config Files
+	/dev   -   Devive Files
+	/proc  -   Process Files
+	/var   -   Variable Files
+	/tmp   -   Temporary Files
+	/usr   -   User Programs
+	/home  -   Home Directory
+	/boot  -   Boot Files
+	/lib   -   Systems Libraries
+	/opt   -   Optional App
+	/mnt   -   Mount Directory
+	/media -   Removable Media
+	/srv   -   Service Data

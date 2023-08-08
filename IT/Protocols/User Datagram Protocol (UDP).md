@@ -1,0 +1,2 @@
+- **Description**: UDP is a connectionless protocol that works similarly to TCP but without the error-checking and recovery services.
+- **How it Works**: UDP sends packets to the recipient without establishing a connection, making it faster but less reliable than TCP. It's used where speed is preferable to accuracy, such as in streaming media.

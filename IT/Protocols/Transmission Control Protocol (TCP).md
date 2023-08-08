@@ -1,0 +1,2 @@
+- **Description**: TCP provides reliable, ordered, and error-checked delivery of a stream of bytes between applications running on hosts on a network. It operates at the transport layer.
+- **How it Works**: TCP establishes a connection between the sender and receiver and maintains it during the entire data transfer. It ensures that packets are delivered in the correct order and without errors.

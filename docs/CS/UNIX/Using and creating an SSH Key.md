@@ -1,10 +1,10 @@
 
-If you already have a key DO NOT MAKE A NEW ONE.
+You do not need to make a new key for each server connection, one key is used per accessing computer. This key is stored on the device and can be used for multiple connections.
 
 ---
-# Creating a key
+## Creating a key
 
-First create the ssh key on the main device (Usually not the Server) with:
+First create the ssh key on the connecting device with:
 
 	ssh-keygen -t rsa
 
@@ -21,15 +21,15 @@ First create the ssh key on the main device (Usually not the Server) with:
 Key is saved in /home/USER.ssh/id_rsa
 
 ---
-# Copy the key to a server or add it on the DigitalOcean console
+## Copying the key to a server
 
-## Access the key to copy to DigitalOcean with:
+### Access the key to copy as plaintext:
 
 	cat /Users/USERNAME/.ssh/id_rsa.pub
 
-\# Copy this output to digital ocean
+\# Copy this output to digital ocean or other hosting platform
 
-## Add to server from command line:
+### Add to server from command line:
 
 If ssh-copy isn't already installed run:
 

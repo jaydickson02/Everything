@@ -1,0 +1,2 @@
+- **Description**: IP is responsible for delivering packets from the source host to the destination host based on their IP addresses. It works at the network layer and doesn't guarantee delivery, leaving error handling to other protocols.
+- **How it Works**: IP forwards packets based on a destination IP address, routing them through various intermediary points until they reach their destination.
