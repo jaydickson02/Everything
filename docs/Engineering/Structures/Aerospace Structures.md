@@ -123,7 +123,7 @@ Created: April 28, 2022 11:02 AM
   - Stresses are in the elastic range
   - No local section instabilities (no twist or deformation)
 
-![Untitled](AerospaceStructuresMedia/Untitled.png)
+![Untitled](Untitled.png)
 
 - Perfect column under compressive load P
 - Load associated with buckling is $P_{CR}$
@@ -131,9 +131,9 @@ Created: April 28, 2022 11:02 AM
 
 ### Derivation of Euler Buckling Equation
 
-![Untitled](AerospaceStructuresMedia/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
-![Untitled](AerospaceStructuresMedia/Untitled%202.png)
+![Untitled](Untitled%202.png)
 
 ### Buckling Modes
 
@@ -146,7 +146,7 @@ $$
 
 ### Effective Length
 
-![Untitled](AerospaceStructuresMedia/Untitled%203.png)
+![Untitled](Untitled%203.png)
 
 ### End Fixity
 
@@ -154,21 +154,21 @@ $$
 - Most columns have some form of restraint (end fixity)
 - To account for this, the effective length L’ is adopted $P_{CR} = {\pi^2EI\over (L')^2}$
 
-![Untitled](AerospaceStructuresMedia/Untitled%204.png)
+![Untitled](Untitled%204.png)
 
 ### Second Moment of Area
 
-![Untitled](AerospaceStructuresMedia/Untitled%205.png)
+![Untitled](Untitled%205.png)
 
 - Buckling always occurs around the axis of $I_{min}$
 
 ### Stress Form of Buckling Equation
 
-![Untitled](AerospaceStructuresMedia/Untitled%206.png)
+![Untitled](Untitled%206.png)
 
 ### Column Curve
 
-![Untitled](AerospaceStructuresMedia/Untitled%207.png)
+![Untitled](Untitled%207.png)
 
 ## Inelastic Buckling
 
