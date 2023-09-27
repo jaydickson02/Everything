@@ -1,4 +1,4 @@
-Certainly! Propositional logic is a branch of logic that deals with propositions (statements that are either true or false) and the relationships between them. Here's a quick crash course on the key terms and nomenclature:
+Propositional logic is a branch of logic that deals with propositions (statements that are either true or false) and the relationships between them.
 
 ### Basic Elements
 
