@@ -2,7 +2,7 @@ This large city on the edge of the desert serves as the campaign's starting poin
 
 The city is built into a large canyon and it stretches upwards with shops and buildings cut into the sides of the canyon walls.  Connecting them is a mismatched jumble of sandstone bridges, wooden walkways and rickety rope bridges. A river flows at the bottom of the canyon providing water for the residents. The general population are united in their concern regarding the continued shrinking of the river and its water supply.
 
-![[Scorpions Rest.png]]
+![[Scorpions Rest Main.png]]
 
 ### Introduction
 As your party makes its way through the bustling streets, the city of Scorpions Rest is alive around you, a breathtaking spectacle nestled within the confines of a colossal canyon. Towering sandstone cliffs flank the city on either side, their weathered surfaces etched with the marks of time and history. The canyon walls serve as the canvas upon which this vibrant city is painted, with shops and buildings ingeniously carved and integrated into the rock face.
@@ -11,13 +11,13 @@ Buildings of various shapes and sizes jut out from the canyon walls, their facad
 
 The cacophony of city life fills the air as merchants peddle their wares, craftsmen ply their trades, and residents go about their daily routines. The vibrant energy of Scorpions Rest is palpable as the sounds of laughter, bargaining, and the occasional clang of metal echo against the canyon walls.
 
-Below, a lively river winds its way through the city falling at points to collect along the canyon floor, its gentle waters providing a lifeline for the city's inhabitants. The river serves as a source of water, quenching the thirst of the residents and sustaining the verdant patches of vegetation that dot its banks.
+Above you, a lively river winds its way through the city falling at points to collect along the canyon floor.
 
 #### Shrine
 Located deep in [[The Catacombs]] of the city is the relic known as the [[Eye of the Desert]], it is said that this eye was what allowed this city to have settled here in the first place. The Eye was lost long ago but there are some still who may have the clues needed to find it. It can be found at [[The Shrine]].
 
 #### Politics
-The City is managed day to day by a governing body. This body is elected by the city elders. The elders are a renowned group as they have dedicated their lives to the city and its people, from the age of 20 they serve until death. The only current Elder is [[Yasmine]].
+The City is managed day to day by a governing body. This body is elected by the city elders. The elders are a renowned group as they have dedicated their lives to the city and its people, from the age of 20 they serve until death. The only current Elder is [[Yasmine Rahim]].
 
 The government operates in a large cathedral like building. This building sits atop a sandstone bridge that stretches' from canyon wall to canyon wall. The residents colloquially call it [[The Dusty Dome]].
 
@@ -59,3 +59,21 @@ The city offers many goods and services. The price is fair and the merchants are
 ##### Homes of Interest
 
 ##### Gardens
+
+#### Images of Different Parts of the City
+
+
+##### Trade Center
+![[My Images 0_1.webp]]
+##### Residential District
+![[My Images.webp]]
+##### Education District/Libraries
+![[My Images  (2).webp]]
+##### Secondary Trade Center
+![[My Images 0_3.webp]]
+##### Highest Point of Scorpion Rest/Dusty Dome to the Left
+![[My Images  (1).webp]]
+##### Industrial Area
+![[My Images .webp]]
+##### Docks/Side City Entrance
+![[Scorpions Rest.webp]]

@@ -1,1 +1,0 @@
-Shop keep for [[Grove's Steel Goods]]

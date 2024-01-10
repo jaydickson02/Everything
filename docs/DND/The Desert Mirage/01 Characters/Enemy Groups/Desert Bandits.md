@@ -1,1 +1,1 @@
-A group of opportunistic bandits in the desert who attempt to rob the party, providing a non-monster encounter in [[The Shifting Dunes]].
+A group of opportunistic bandits in the desert who attempt to rob the party. Located directly north of [[Scorpions Rest]].

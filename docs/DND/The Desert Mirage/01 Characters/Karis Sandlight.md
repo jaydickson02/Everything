@@ -1,4 +1,4 @@
-A desert nomad living near [[The Parched Peak]] who studies the stars. She can provide crucial information about the constellation "[[The Lorekeeper]]" and when it can be observed.
+A desert nomad living near at the [[cactus caverns]] south of the [[The Parched Peak]] who studies the stars. She can provide crucial information about the constellation "[[The Lorekeeper]]" and when it can be observed.
 
 ![[Karis.png]]
 

@@ -1,1 +1,1 @@
-This Pyramid has been long since abandoned. Previously the Pyrimid was used as a place of star gazing and astronomy built by the desert nomads. It was abandoned when a sandworm moved into the area.
+This Pyramid has been long since abandoned. Previously the Pyrimid was used as a place of star gazing and astronomy built by the [[desert nomads]]. It was abandoned when a sandworm moved into the area.

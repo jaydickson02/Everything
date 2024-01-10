@@ -1,1 +1,1 @@
-Underground homes built just south of the parched peak. This is the largest desert nomad settlement. Nomads are drawn here due to it being the center of the Lorekeeper constellation which is almost a religious place for the nomads. 
+Underground homes built just south of [[the parched peak]]. This is the largest desert nomad settlement. Nomads are drawn here due to it being the center of [[the Lorekeeper]] constellation which is almost a religious place for the nomads. 

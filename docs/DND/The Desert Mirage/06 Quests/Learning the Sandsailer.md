@@ -11,7 +11,7 @@ Learning the Art of the [[Sandsailer]]
    - [[Baylorn Windswept]] offers the party the opportunity to purchase a bare [[Sandsailer]] board at a discounted rate. This board will serve as the canvas for impressing the wind spirit.
 
 2. **Journey to the Dunes:**
-   - [[Baylorn Windswept]] guides the party to a remote expanse of high dunes, the ideal location for the ritual of taming a wind spirit.
+   - [[Baylorn Windswept]] guides the party to the [[taming dunes]] - a remote expanse of high dunes, the ideal location for the ritual of taming a wind spirit.
 
 3. **Impressing the [[Wind Spirits]]:**
    - Each party member must creatively impress the [[wind spirits]], utilising their unique skills and inventiveness to attract and tame a spirit. The more inventive the approach, the greater the chance of success.
