@@ -1,1 +1,0 @@
-Even amongst all the knowledge stored in the [[Mirage City]], much of it depicting evil as often as good. There is a place deep in the city that hold forbidden knowledge deemed too dangerous for nearly anyone's eyes. This knowledge is hidden within the forbidden library.

@@ -1,1 +1,0 @@
-A hidden, lush oasis in the midst of the desert, home to friendly elemental beings and a source of valuable resources.

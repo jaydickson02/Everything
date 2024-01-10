@@ -1,1 +1,1 @@
-The final spectral protector of the [[Mirage City]]. It is enigmatic and challenging, designed to test the adventurers' resolve and worthiness.
+The final protector of the [[Mirage City]]. It is enigmatic and challenging, designed to test the adventurers' resolve and worthiness. It is a mechanical/magical giant being, that will fight the adventures trying get into the [[Mechanical Heart]].

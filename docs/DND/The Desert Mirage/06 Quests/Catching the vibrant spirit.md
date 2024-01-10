@@ -1,3 +1,3 @@
-- [[Baylorn]] wants you to help him catch a particularly energetic wind spirt that often wreaks havoc on the camp. He hopes to use it to win the upcoming race. 
-- The spirit was last spotted by [[Scorpion Rest desert market]]. 
-- [[Baylorn]] needs the party to entrap the wind spirit long enough for him to tame it.
+- [[Baylorn Windswept]] wants you to help him catch a particularly energetic wind spirt that often wreaks havoc on the camp. He hopes to use it to win the upcoming race. 
+- The spirit was last spotted by [[Scorpion Rest Desert Market]]. 
+- [[Baylorn Windswept]] needs the party to entrap the wind spirit long enough for him to tame it.

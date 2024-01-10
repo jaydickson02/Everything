@@ -1,1 +1,0 @@
-A prominent mountain on the desert's edge. Its summit is the only known location from which the [[Mirage City]] can be viewed under the constellation "The Lorekeeper".

@@ -1,1 +1,0 @@
-A storefront full of armor, swords, axes and other steel weapons and wares.

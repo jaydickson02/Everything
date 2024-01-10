@@ -1,0 +1,3 @@
+$(As - Steve - ious)$
+
+[[Narsilius Quill]]'s father, a dedicated explorer, made a groundbreaking discovery while on his expeditions—he stumbled upon the elusive secret of the [[Mirage City]]. During one fateful journey, he managed to breach its elusive boundaries, but fate dealt him a cruel hand. Once inside, he became ensnared, unable to find an exit, and has remained trapped within the enigmatic confines of the [[Mirage City]] for the past two decades.

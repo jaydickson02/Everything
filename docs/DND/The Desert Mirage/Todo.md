@@ -6,7 +6,9 @@
 	- This may be better done with a maze generator and randomly placing the points of interest.
 - Outline the puzzles to be faced in the [[Mirage City]].
 - Generate more in depth backstorys for the following:
-	- [[Leora]]
+	- [[Leora Khayin]]
 	- Yasmine
-	- [[Karis]] (If time permits)
-	- [[Quill]]
+	- [[Karis Sandlight]] (If time permits)
+	- [[Narsilius Quill]]
+- Create the settlement that Karis Lives in. It should be a significant settlement. Second biggest other than Scorpions Rest as many come her to live below the lorekeeper.
+- What does Leoras force look like. Can she be made more formidable and powerful?

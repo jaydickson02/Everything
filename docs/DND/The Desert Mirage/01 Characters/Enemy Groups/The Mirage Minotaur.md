@@ -1,1 +1,1 @@
-A guardian construct in the form of a minotaur, patrolling the [[Mirage City]]. It provides a physical and intellectual challenge with its strength and riddles.
+A guardian construct in the form of a minotaur, patrolling the [[Mirage City]]. It will attack the party if they come across it. If it is destroyed a new one will be released to continue patrolling the city maze.

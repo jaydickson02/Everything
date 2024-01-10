@@ -1,1 +1,0 @@
-The catacombs under [[Scorpions Rest]]. They are used to access the city aqueducts and serve as passive cooling for the city. Further a secret path exists leading to [[The Shrine]].

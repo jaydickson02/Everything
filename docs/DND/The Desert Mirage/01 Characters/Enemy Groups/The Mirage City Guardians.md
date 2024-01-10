@@ -1,1 +1,0 @@
-The spectral remains of the city's ancient inhabitants, they are scholarly, curious, and dedicated to protecting their city's knowledge. They are somewhat detached from worldly concerns, being more focused on intellectual pursuits.

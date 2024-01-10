@@ -1,0 +1,1 @@
+Large open expanse of flat desert. The great sandworms congregate in this region. They react to vibrations so best to stay quiet.

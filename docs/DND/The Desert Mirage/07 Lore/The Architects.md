@@ -1,0 +1,13 @@
+Ten millennia past, in an era of flourishing kingdoms and arcane marvels, the greatest scholars from diverse backgrounds convened to safeguard knowledge from the looming chaos of an impending cataclysm. United by their pursuit of wisdom, they forged a refuge city, shrouded in secrecy, where magic intertwined seamlessly with advanced technology.
+
+The city prospered, a beacon of enlightenment hidden from covetous eyes. Yet, the nefarious King Racness Plonvale VII, driven by insatiable greed, coveted its mysteries. His son, Trintoval Plonvale, a prodigious scholar, refused to betray the city's trust despite his father's demands. Tragically, in a fit of desperation, the king extracted secrets from his son through heinous means, leading to the young scholar's demise.
+
+Armed with this forbidden knowledge, King Plonvale forged an unholy alliance, marshalling kingdoms to besiege the refuge city. Its defenses valiantly resisted the onslaught, but the collective might of the alliance gradually encroached upon its borders, threatening imminent breach.
+
+Faced with impending doom, the city's guardians activated its final defense—a mystical heart that imbued the city with sentience and control. The city awakened, bestowed with a soul, as the architects, in a selfless sacrifice, empowered this final gambit to safeguard their legacy.
+
+In a last act of hope, a select group of scholars clandestinely journeyed to Scorpion's Rest, a fledgling settlement, there they inscribed a riddle upon the Eye of the Desert—a precious relic entrusted to the people of Scorpions Rest. They beseeched the settlement's elders to conceal the relic beneath their city and disseminate a map to the world. This map held the key to finding the relic—a task designated for a future generation that valued wisdom over dominion.
+
+Returning to the refuge city, the final decree was issued. Its inhabitants were enshrined in a profound slumber, preserving their essence until the destined hour arrived. The city itself empowered by its soul, sealed itself completely and hid behind the mirage. 
+
+To this day, the Eye of the Desert remains hidden, holding the city's fate. It is whispered that only those who champion knowledge's sanctity over power can find it and decipher the relic's mysteries. For when the time comes to reawaken the city, it will emerge not as a fortress of war but as a bastion of benevolence, beckoning seekers of wisdom and righteousness.

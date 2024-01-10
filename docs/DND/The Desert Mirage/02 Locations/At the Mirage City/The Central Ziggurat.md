@@ -1,1 +1,0 @@
-The heart of the [[Mirage City]]. This grand structure houses the final challenge and the locus of the city's consciousness.

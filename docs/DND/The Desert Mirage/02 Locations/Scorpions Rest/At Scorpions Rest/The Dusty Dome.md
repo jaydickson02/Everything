@@ -1,0 +1,1 @@
+Home to the political goings on at [[Scorpions Rest]]. A large cathedral like building situated at the top of the canyon supported by a sandstone bridge.

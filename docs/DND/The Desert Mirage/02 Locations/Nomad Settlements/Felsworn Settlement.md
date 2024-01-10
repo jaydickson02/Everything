@@ -1,0 +1,1 @@
+The closest settlement to Scorpions Rest, the desert nomads have long maintained a presence here. Although the residences are mostly just tents and other temporary looking structures the settlement is quite permanent. It is mostly occupied by older nomads as the proximity to scorpions rest makes for an easier access to water, food and aid.

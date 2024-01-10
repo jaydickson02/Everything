@@ -1,0 +1,1 @@
+An old fallen city, likely an attempt by a group of prior Scorpions Rest Citizens to set out on their own. Its likely their failure was water but they are close to the Whisper Sands so who can say.

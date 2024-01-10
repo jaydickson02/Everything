@@ -1,0 +1,1 @@
+The Guardian of [[The Shrine]], it is silent and deadly, programmed to defend the [[Eye of the Desert]] against anyone it deems unworthy.
