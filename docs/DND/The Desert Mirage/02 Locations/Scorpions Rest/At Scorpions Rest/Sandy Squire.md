@@ -1,6 +1,6 @@
 The place to be for quality ale in [[Scorpions Rest]]. Most all of the denizens of the city speak highly of the place and can be found here after a long days work.
 
-![[Sandy Squire from Inkarnate.jpg]]
+![[Sandy Squire Floor Map.jpg]]
 ![[SandySquire.png]]
 The rooms are often full here. Frequently, used by customers avoiding the trek home after one to many.
 
