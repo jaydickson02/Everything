@@ -14,4 +14,4 @@ Where shadows hold sway,
 
 Underneath the light of day,  
 
-Find the Eye in the desert's chest."
+Find the Eye in the desert's chest. "

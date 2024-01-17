@@ -1,3 +1,4 @@
+![[DesertPic.png]]
 #### **Campaign Introduction**
 
 This campaign will lead the party on an arduous journey through an expansive desert, guided by cryptic clues, ancient astronomy, and their own intuition in search of the [[Mirage City]]. An ancient civilization, renowned for their thirst for knowledge and preservation of wisdom, reputedly built the city. Their history is shrouded in mystery, their power seemingly lost to the sands of time.

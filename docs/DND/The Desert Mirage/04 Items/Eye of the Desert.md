@@ -1,4 +1,10 @@
-This relic was lost long ago. It given by the people of the [[Mirage City]] to lost explorers, trapped in the desert. They used it to settle [[Scorpions Rest]] as it provided an abundant and infinite source of clean, fresh water. This in turn allowed the remainder of the desert in this area to flourish. Without its power the desert people are suffering, as the river is starting to dry up. It can be found in [[The Shrine]]. To revitalize the relic it must be taken back to the [[Mirage City]].
+This relic buried beneath Scorpions Rest shortly after it was founded. Its power had allowed Scorpions Rest to flourish when compared with the surrounding settlements. 
+
+It was given to the [[Settlers of Scorpions Rest]] by [[The Architects]] in the Mirage City. The Eye provides abundant water and infuses the land with arcane energy strong enough to cancel out the negative effects of [[The Thirst]].
+
+The Eye has long since been losing its power, as it stands it is deployed in a [[The Shrine]]. This has allowed it to manifest water at the top of the canyon, which flows through the city and the catacombs. If its power fails completely the water will dry up and the city will surely die.
+
+It must be returned to the [[Mirage City]] to be revitalised.
 
 #### Description
 It looks like a gold oval tablet with a sapphire sphere in the center. It resembles an eyeball. There are markings on the tablet that are written in a very old language.

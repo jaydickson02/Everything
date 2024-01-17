@@ -1,0 +1,9 @@
+A millennium ago, nestled within what is now known as the Scarab Valley, flourished a prosperous empire surrounded by abundant and lush vegetation. The inhabitants of this land were devout followers of [[Obad-Hai]], the revered god of nature. One of their most cherished creations was [[the Garden]] of the God, a pristine sanctuary that stood as a testament to their gratitude towards the natural world.
+
+However, the fortune of this civilisation took a fateful turn when they stumbled upon a rich deposit of Mithril, lying tantalisingly close to the surface. Tempted by the allure of this precious metal, the empire succumbed to the desire for wealth and power. Ignoring the sacred principles of harmony with nature, they embarked on an extensive excavation, inadvertently causing irreparable damage to the once-thriving ecosystem.
+
+The god [[Obad-Hai]], witness to this desecration of the land, was consumed by righteous fury. In response to the betrayal of his teachings, he cast a formidable curse upon the region and its inhabitants. The once-verdant paradise swiftly transformed into an arid desert, a barren expanse that mirrored the desolation wrought by the insatiable greed of the empire.
+
+The curse imposed by [[Obad-Hai]] manifested as a relentless struggle for water, a vital resource now scarce in the cursed Scarab Valley. Those who sought to reside in the region found themselves locked in an eternal battle to acquire and maintain access to this precious element. The empire's quest for wealth had not only robbed them of their once-thriving civilisation but had condemned the Scarab Valley to an enduring legacy of hardship and scarcity.
+
+As time marched on, the Scarab Valley became a haunting reminder of the consequences of prioritising material gain over the delicate balance of nature, and the cursed descendants found themselves forever entwined in a struggle for survival amidst the unforgiving sands of their once-prosperous realm.

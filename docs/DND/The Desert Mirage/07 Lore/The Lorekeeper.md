@@ -4,6 +4,10 @@ Within the lore of the [[desert nomads]], the Lorekeeper Constellation stands as
 **Dynamic Celestial Movement:**
 Named for its role as the custodian of wisdom and direction, the Lorekeeper Constellation manifests a dynamic presence in the night sky. As nomads journey through the desert, this celestial formation appears to transform in response to their progress. When distanced from [[the Parched Peak]], the constellation assumes the serene depiction of a woman with her arms gracefully resting by her sides. However, as traveler's approach the vicinity of [[the Parched Peak]], a transformative shift occurs—the woman's arms gradually ascend, aligning to point resolutely north of the peak.
 
+**Origin**:
+The Lorekeeper is a projection from within the mirage city. It was part of the final plan, and was intended to allow entrance to the city someday.
+
+
 **Key to the [[Mirage City]]'s Revelation:**
 Central to the nomads' quest to unveil the [[Mirage City]]'s hidden sanctuary, the Lorekeeper Constellation acts as an indispensable marker. The raised arms of the celestial woman, indicating the direction north of [[the Parched Peak]], serve as a celestial key. This alignment plays an instrumental role in unlocking the elusive path leading to the enigmatic city, guiding those astute enough to interpret its celestial guidance.
 

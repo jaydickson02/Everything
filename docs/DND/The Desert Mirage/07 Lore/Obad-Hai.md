@@ -1,0 +1,7 @@
+**Obad-Hai** is the god of Nature, Woodlands, Hunting, and Beasts, one of the most ancient known. He is often called the Shalm. He is also considered to be the god of summer by the [Flan](https://en.wikipedia.org/wiki/Flan_(Greyhawk) "Flan (Greyhawk)"). Originally a Flan deity, Obad-Hai is most favoured by Rangers, [druids](https://en.wikipedia.org/wiki/Druid_(Dungeons_%26_Dragons) "Druid (Dungeons & Dragons)") and other nature priests. His holy symbol is a mask of oak leaves and acorns.''
+
+Myths 
+
+An article on the Wizards of the Coast website for the Living Greyhawk column describes that, according to the ancient traditions of the Old Faith, Obad-Hai is reborn every spring, hatching in the form of a young boy from the fruit of a sapling that grows from his own grave. By summer Obad-Hai takes the form of a strong young man, the Stag King, leading the Wild Hunt against those who would defile Nature. By autumn he has grown into the weathered old man of his standard depictions. When winter begins he is slain by Nerull, who hangs his corpse on the Summer Tree. After seven days, Pelor cuts him down and buries him in the earth, where Beory's tears cause a new sapling to grow, which drops the fruit that hatches into the young Obad-Hai once again in the spring.[12]
+
+https://wikiproject-dungeons-dragons.fandom.com/wiki/Obad-Hai

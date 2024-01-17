@@ -1,0 +1,1 @@
+A homage to the god [[Obad-Hai]]. He blessed this garden after it was created by the prior settlers of the area. It is the only remaining bastion the areas prior glory. Clinging to life due to the blessing of [[Obad-Hai]] a Millenia ago. The plants have grown hostile and many have become conscious.

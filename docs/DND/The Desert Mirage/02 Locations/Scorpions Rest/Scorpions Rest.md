@@ -24,8 +24,10 @@ The government operates in a large cathedral like building. This building sits a
 #### Religion
 The people here practice a number of religions but primarily they are partial to the great Al-Kalim the immortal warrior of the desert.
 
+A small sect worships the nature god [[Obad-Hai]] but the presence of this faith has been steadily dropping over the decades.
+
 #### The Settlers
-The [[Settlers of Scorpions Rest]] were a group of travellers that got lost in the dessert. They were rescued by the then relatively new [[Mirage City]]
+The [[Settlers of Scorpions Rest]] were a group of travellers that got lost in the dessert. They were rescued by the then relatively new [[Mirage City]] 
 
 #### [[The Catacombs]]
 Bellow Scorpions Rest are a network of Catacombs, these lead to various locations under the city and are used primarily to the city's aqueducts and are used for passive cooling of the city. They are well mapped out but the ancient map in the parties possession can allow for the creation of the Map to [[The Shrine]] which depicts a secret path in [[The Catacombs]].
@@ -39,7 +41,7 @@ The city offers many goods and services. The price is fair and the merchants are
 - [[The Thorny Cactus]] up North on the the 3rd level serves the best ale in the dessert
 - [[Sandy Squire]] it's quaint and more expensive but at least its less rowdy!
 ##### Smiths
-- [[Grove's Steel Goods]], a fine seller of armor and weapons.
+- [[Grove's Steel Goods]], a fine seller of armour and weapons.
 - [[Sam's Gun Den]], practice your shooting and win the finest hand gun in the desert.
 ##### Clothing/Apparel
 - [[Tattle's Travel Wares]], need to keep cool in the desert. Look no further.

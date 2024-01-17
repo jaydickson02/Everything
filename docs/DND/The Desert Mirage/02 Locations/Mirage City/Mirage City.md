@@ -30,3 +30,6 @@ It is a magnificent building that moves with the cities changes. The heart house
 
 #### The builders
 [[The Architects]] were a set of scholars who banded together to form the city. They sealed themselves within the city walls hidden and sleeping, waiting for someone to awaken them.
+
+#### Constellation Projector
+- Work this out. Projects the lorekeeper.
