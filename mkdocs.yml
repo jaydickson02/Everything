@@ -1,7 +1,7 @@
 site_name: Everything
 
 theme:
-    name: 'material'
+    name: 'terminal'
     icon:
         logo: octicons/book-24
     palette:
