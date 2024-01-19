@@ -1,0 +1,5617 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Mathematics/Quotient%20Rule/">
+      
+      
+        <link rel="next" href="../Aerospace%20Structures/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Aerospace Finite Element Methods - Everything</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-finite-element-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Everything" class="md-header__button md-logo" aria-label="Everything" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Everything
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Aerospace Finite Element Methods
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Everything" class="md-nav__button md-logo" aria-label="Everything" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"/></svg>
+
+    </a>
+    Everything
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            CS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/Bayesian%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bayesian Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/Propositional%20Logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Propositional Logic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UNIX
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            UNIX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/Changing%20the%20hostname/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changing the hostname
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/Common%20Operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/Creating%20new%20Users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating new Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/UNIX%20Filesystem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UNIX Filesystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/Using%20a%20SSH%20Tunnel%20for%20Internet%20Traffic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using a SSH Tunnel for Internet Traffic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CS/UNIX/Using%20and%20creating%20an%20SSH%20Key/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using and creating an SSH Key
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DND
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DND
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Echoes of Darkness
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Echoes of Darkness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/Echoes%20of%20Darkness/Campaign%20Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Campaign Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Items
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Items
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/Echoes%20of%20Darkness/Items/Cloak%20of%20Misdirection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloak of Misdirection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/Echoes%20of%20Darkness/Items/Headband%20of%20the%20Wildwalker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Headband of the Wildwalker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/Echoes%20of%20Darkness/Items/Phantom%20Blade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phantom Blade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Desert Mirage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            The Desert Mirage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Common%20Information/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Ideas%20to%20Fit%20Somewhere/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ideas to Fit Somewhere
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Player%20Friendly%20Summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player Friendly Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Quest%20Ideas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quest Ideas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/Todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Todo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8" id="__nav_3_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 Characters
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            01 Characters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Anuk%20Salamantra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anuk Salamantra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Astevius%20Quill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Astevius Quill
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Baylorn%20Windswept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Baylorn Windswept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Grove%20Smithling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grove Smithling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Karis%20Sandlight/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Karis Sandlight
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Leora%20Khayin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leora Khayin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Luta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Malaya/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Malaya
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Narsilius%20Quill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Narsilius Quill
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Rahim%20Waregifted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rahim Waregifted
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Sira/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sira
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Tarbaen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tarbaen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Taren/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taren
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Tattle%20Plodder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tattle Plodder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Winston%20Terin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Winston Terin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Yasmine%20Rahim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yasmine Rahim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Yelb%20Frolith/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yelb Frolith
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Zephyr%20Yudrab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zephyr Yudrab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Zoya%20Leyna/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zoya Leyna
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8_20" id="__nav_3_2_8_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Enemy Groups
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_8_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_8_20">
+            <span class="md-nav__icon md-icon"></span>
+            Enemy Groups
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/Desert%20Bandits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desert Bandits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/Sand%20Scorpions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sand Scorpions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/The%20Canyon%20Serpent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Canyon Serpent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/The%20Great%20Guardian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Great Guardian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/The%20Last%20Guardian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Last Guardian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/01%20Characters/Enemy%20Groups/The%20Mirage%20Minotaur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Mirage Minotaur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9" id="__nav_3_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 Locations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            02 Locations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Al-Kalim%27s%20Temple/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Al Kalim's Temple
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Quills%20Pyramid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quills Pyramid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Ruined%20City/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ruined City
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/The%20Garden/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Garden
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_5" id="__nav_3_2_9_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mirage City
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mirage City
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mirage%20City/Mirage%20City/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mirage City
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_5_2" id="__nav_3_2_9_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    At the Mirage City
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_2_9_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            At the Mirage City
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mirage%20City/At%20the%20Mirage%20City/Mechanical%20Heart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mechanical Heart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mirage%20City/At%20the%20Mirage%20City/The%20Central%20Ziggurat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Central Ziggurat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mirage%20City/At%20the%20Mirage%20City/The%20Forbidden%20Library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Forbidden Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_6" id="__nav_3_2_9_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mountains
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mountains
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mountains/Falborn%20Mountains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Falborn Mountains
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mountains/Lost%20Ranges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lost Ranges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mountains/Sandstone%20Ranges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sandstone Ranges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Mountains/Steady%20Rocks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Steady Rocks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_7" id="__nav_3_2_9_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nomad Settlements
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_7">
+            <span class="md-nav__icon md-icon"></span>
+            Nomad Settlements
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Nomad%20Settlements/Cactus%20Caverns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cactus Caverns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Nomad%20Settlements/Felsworn%20Settlement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Felsworn Settlement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_8" id="__nav_3_2_9_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Points of Interest
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_8">
+            <span class="md-nav__icon md-icon"></span>
+            Points of Interest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Points%20of%20Interest/Bandit%20Camp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bandit Camp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Points%20of%20Interest/Guarded%20Ruins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guarded Ruins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Points%20of%20Interest/Leora%27s%20Encampment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leora's Encampment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Points%20of%20Interest/The%20Lost%20Caravan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Lost Caravan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Points%20of%20Interest/The%20Parched%20Peak/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Parched Peak
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_9" id="__nav_3_2_9_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Regions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_9">
+            <span class="md-nav__icon md-icon"></span>
+            Regions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Regions/Taming%20Dunes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taming Dunes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Regions/The%20Shifting%20Dunes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Shifting Dunes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Regions/Whisper%20Sands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whisper Sands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_10" id="__nav_3_2_9_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Scorpions Rest
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_9_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_10">
+            <span class="md-nav__icon md-icon"></span>
+            Scorpions Rest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/Scorpions%20Rest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scorpions Rest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_9_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_9_10_2" id="__nav_3_2_9_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    At Scorpions Rest
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_2_9_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_9_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            At Scorpions Rest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Grove%27s%20Steel%20Goods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grove's Steel Goods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Quills%20Cartography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quills Cartography
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Sam%27s%20Gun%20Den/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sam's Gun Den
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Sandy%20Squire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sandy Squire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Scorpion%20Rest%20Desert%20Market/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scorpion Rest Desert Market
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/Tattle%27s%20Travel%20Wares/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tattle's Travel Wares
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/The%20Catacombs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Catacombs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/The%20Dusty%20Dome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Dusty Dome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/The%20Shrine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Shrine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/02%20Locations/Scorpions%20Rest/At%20Scorpions%20Rest/The%20Thorny%20Cactus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Thorny Cactus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_10" id="__nav_3_2_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    03 Players
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            03 Players
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/03%20Players/Bren%20%28CJ%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bren (CJ)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/03%20Players/Ethan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/03%20Players/Jake/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jake
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/03%20Players/Kyle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kyle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_11" id="__nav_3_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    04 Items
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            04 Items
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/04%20Items/Eye%20of%20the%20Desert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eye of the Desert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/04%20Items/Map%20to%20the%20Shrine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map to the Shrine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/04%20Items/Mirage%20Seal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mirage Seal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/04%20Items/Ring%20of%20the%20Pathseeker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ring of the Pathseeker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/04%20Items/Sandsailer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sandsailer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_12" id="__nav_3_2_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    05 Homebrew Rules
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            05 Homebrew Rules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/05%20Homebrew%20Rules/Desert%20Specific%20Rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desert Specific Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_13" id="__nav_3_2_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    06 Quests
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            06 Quests
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Catching%20the%20Vibrant%20Spirit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catching the Vibrant Spirit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Handle%20the%20Bandits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Handle the Bandits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Into%20the%20Catacombs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Into the Catacombs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Learning%20the%20Sandsailer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning the Sandsailer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Main%20Quest%20Line/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Quest Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/Mapping%20the%20Pyramid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping the Pyramid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/06%20Quests/The%20Secret%20Tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Secret Tunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_14" id="__nav_3_2_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    07 Lore
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            07 Lore
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Al-Kalim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Al Kalim
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Desert%20Nomads/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desert Nomads
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Kran-toa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kran toa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Noble%20Family%27s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Noble Family's
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Obad-Hai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obad Hai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Priests%20of%20Obad-Hai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priests of Obad Hai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Sandsailers%20Guild/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sandsailers Guild
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Settlers%20of%20Scorpions%20Rest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settlers of Scorpions Rest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Shadow%20Demons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shadow Demons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Architects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Architects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Fallen%20Kingdoms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Fallen Kingdoms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Lorekeeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Lorekeeper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Organisation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Organisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Red%20Sands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Red Sands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/The%20Thirst/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Thirst
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/07%20Lore/Wind%20Spirits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wind Spirits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_15" id="__nav_3_2_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    08 Maps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_15">
+            <span class="md-nav__icon md-icon"></span>
+            08 Maps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/08%20Maps/Nomad%20Map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nomad Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/08%20Maps/Quills%20Maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quills Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/08%20Maps/Sarab%20Valley/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sarab Valley
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_16" id="__nav_3_2_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    09 Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_16">
+            <span class="md-nav__icon md-icon"></span>
+            09 Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/09%20Resources/Links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_17" id="__nav_3_2_17_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    10 Sessions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_17">
+            <span class="md-nav__icon md-icon"></span>
+            10 Sessions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DND/The%20Desert%20Mirage/10%20Sessions/First%20Session/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Session
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fluid Dynamics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Fluid Dynamics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Fluid%20Dynamics/Computational%20and%20High-Speed%20Aerodynamics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computational and High-Speed Aerodynamics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mathematics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Chain%20Rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chain Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Common%20Derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Common%20Integrals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Integrals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Integration%20by%20Parts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration by Parts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Log%20Laws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log Laws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Product%20Rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Mathematics/Quotient%20Rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quotient Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Structures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Structures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Aerospace Finite Element Methods
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Aerospace Finite Element Methods
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-finite-element-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Finite Element Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Finite Element Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brief-history-of-fem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brief History of FEM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finite-element-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finite Element Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fea-can-solve-a-variety-of-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      FEA can solve a variety of problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scientific-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scientific Analysis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engineering Analysis:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approximations-in-fae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approximations in FAE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numerical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numerical Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#truess-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truess Structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truess Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-start-with-truss-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Start with Truss Elements?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-of-the-stiffness-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivation of the Stiffness Matrix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation of the Stiffness Matrix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Observations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stiffness-in-stuctures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stiffness in Stuctures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-of-virtual-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method of Virtual Work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method of Virtual Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Aerospace%20Structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aerospace Structures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TAODSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            TAODSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TAODSS/DQN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DQN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TAODSS/Engineering%20Capstone%20Project%20Part%20A/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engineering Capstone Project Part A
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TAODSS/Engineering%20Journal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engineering Journal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Thermodynamics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Thermodynamics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Thermodynamics/Enthalpy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enthalpy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Thermodynamics/Heat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Thermodynamics/Thermodynamics%20Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermodynamics Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    IT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            IT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Network%20Classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/OSI%20Model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSI Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Private%20and%20Public%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Private and Public Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Subnets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Subnets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/VLANS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VLANS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Protocols
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Protocols
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Domain%20Name%20System%20%28DNS%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain Name System (DNS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/File%20Transfer%20Protocol%20%28FTP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Transfer Protocol (FTP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/HTTP%20Secure%20%28HTTPS%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTP Secure (HTTPS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/HyperText%20Transfer%20Protocol%20%28HTTP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HyperText Transfer Protocol (HTTP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Internet%20Message%20Access%20Protocol%20or%20Post%20Office%20Protocol%20%28IMAP%20-%20POP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet Message Access Protocol or Post Office Protocol (IMAP   POP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Internet%20Protocol%20%28IP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internet Protocol (IP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Secure%20Shell%20%28SSH%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secure Shell (SSH)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Simple%20Mail%20Transfer%20Protocol%20%28SMTP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simple Mail Transfer Protocol (SMTP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/Transmission%20Control%20Protocol%20%28TCP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transmission Control Protocol (TCP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IT/Protocols/User%20Datagram%20Protocol%20%28UDP%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Datagram Protocol (UDP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Papers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Papers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Papers/Paper%20List/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paper List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reports
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Reports
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Reports/Report%20List/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Report List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-finite-element-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Finite Element Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Finite Element Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brief-history-of-fem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brief History of FEM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finite-element-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finite Element Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fea-can-solve-a-variety-of-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      FEA can solve a variety of problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scientific-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scientific Analysis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engineering Analysis:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approximations-in-fae" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approximations in FAE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numerical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Numerical Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#truess-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truess Structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truess Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-start-with-truss-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Start with Truss Elements?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-of-the-stiffness-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivation of the Stiffness Matrix
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation of the Stiffness Matrix">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Observations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stiffness-in-stuctures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stiffness in Stuctures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-of-virtual-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method of Virtual Work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method of Virtual Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Aerospace Finite Element Methods</h1>
+
+<h2 id="what-is-finite-element-analysis">What is Finite Element Analysis<a class="headerlink" href="#what-is-finite-element-analysis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The FE method involves breaking a structure into several elements (pieces of the structure)</li>
+<li>Describing the behavior of each element in a simple way.</li>
+<li>Elements are then reconnected at nodes (nodes hold elements together list glue)</li>
+<li>The process results in a set of up to several thousands of simultaneous equilibrium equations, which require a computer to solve.</li>
+</ul>
+<h3 id="brief-history-of-fem">Brief History of FEM<a class="headerlink" href="#brief-history-of-fem" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Courant (1943) first developed FEM to solve the problem of torsion of a hollow shaft with a rectangular cross-section.</li>
+<li>Subdivision of cross-section into small triangular sub-sections with linear approximations for displacement over each triangle.</li>
+<li>Assembling of all triangles into a matrix for the whole cross-section, he derived a simple solution for a up-to-date unsolvable problem.</li>
+<li>Work was not discovered until 1960, when the name "finite elements" was coined by Clough at University of Berkeley, USA.</li>
+<li>By late 1980s, method had been implemented into many commercial finite element packages, namely NASTRAN, ABAQUS, ANSYS, STRAND, LS-DYNA, PAM-CRASH, etc.</li>
+<li>Is used on all kind of computers from PC to supercomputers with parallel processing.</li>
+<li>For aerospace companies (Airbus, Boeing) and research teams, ABAQUS is often the main commercial software package.</li>
+</ul>
+<h3 id="finite-element-method">Finite Element Method<a class="headerlink" href="#finite-element-method" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The behavior of complex structures cannot be solved using analytical methods.</li>
+<li>Finite Element Analysis (FEA) is a numerical method that breaks down a structure into  discrete elements.</li>
+<li>The behavior of each discrete element can be calculated.</li>
+<li>The global response of the structure is observed by combining the results of each finite element.</li>
+</ul>
+<h3 id="fea-can-solve-a-variety-of-problems">FEA can solve a variety of problems<a class="headerlink" href="#fea-can-solve-a-variety-of-problems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Deformation analysis</li>
+<li>Stress Analysis</li>
+<li>Natural Frequencies</li>
+<li>
+<p>Buckling Analysis</p>
+</li>
+<li>
+<p>Allows for the analysis of:</p>
+<ul>
+<li>Complex geometries</li>
+<li>Complex situations (constraints, boundary conditions)</li>
+<li>Various physics (structural, thermal, acoustics, etc)</li>
+</ul>
+</li>
+</ul>
+<h3 id="analysis-types">Analysis Types<a class="headerlink" href="#analysis-types" title="Permanent link">&para;</a></h3>
+<p>What separates Engineers from Scientists:</p>
+<h4 id="scientific-analysis">Scientific Analysis:<a class="headerlink" href="#scientific-analysis" title="Permanent link">&para;</a></h4>
+<ul>
+<li>As accurate as <strong>possible</strong></li>
+<li>Looks at <strong>future</strong> technical applications</li>
+<li>Driven by a want to just expand knowledge</li>
+</ul>
+<h4 id="engineering-analysis">Engineering Analysis:<a class="headerlink" href="#engineering-analysis" title="Permanent link">&para;</a></h4>
+<ul>
+<li>As accurate as <strong>required</strong></li>
+<li>Looks at <strong>Current</strong> technical applications</li>
+<li>Is commercially driven</li>
+</ul>
+<h3 id="approximations-in-fae">Approximations in FAE<a class="headerlink" href="#approximations-in-fae" title="Permanent link">&para;</a></h3>
+<ul>
+<li>An object is manufactured out of metallic material. Any metal consists of atoms in a crystal structure. Atoms are discrete, not continuous.</li>
+<li>Mathematical models solve structural and vibrational problems assuming that the object acts as continuous object.</li>
+<li>Mathematical models provide useful solutions to engineers and scientists through methods of differential and integral calculus.</li>
+<li>Only simple mathematical problems can be solved analytically.</li>
+<li>Complex equations are solved through numerical methods.</li>
+</ul>
+<h2 id="numerical-methods">Numerical Methods<a class="headerlink" href="#numerical-methods" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Mathematical model is solved approximately</li>
+<li>Final Difference Method</li>
+<li>Closely related to the solution of mathematical equations.</li>
+<li>Often used for systems of time-dependent partial differential equations (e.g. heat transfer problems diffusion problems).</li>
+<li>Not well suited for complex boundary conditions.</li>
+<li>Finite Volume Method</li>
+<li>Flow problems with complex boundary conditions (heat transfer, diffusion problems)</li>
+<li>Finite Element Method</li>
+<li>Ideally suited for models with complex boundary conditions</li>
+<li>Mixtures of materials</li>
+<li>Mixtures of different structural shapes (trusses, beams, thin shells, solids)</li>
+<li>Used in all fields of engineering and science today</li>
+<li>Methods differ by <strong>how</strong> they divide the space to be analyzed.</li>
+</ul>
+<h2 id="truess-structures">Truess Structures<a class="headerlink" href="#truess-structures" title="Permanent link">&para;</a></h2>
+<p>Truss Structures consist of truss members, i.e. bars that can be loaded only axially. There is no bending allowed, In practice, 
+the connection of trusses in the joints has to be such that the requirement of axial loading can be satisfied.</p>
+<h3 id="why-start-with-truss-elements">Why Start with Truss Elements?<a class="headerlink" href="#why-start-with-truss-elements" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Truss elements are often used in constriction.</li>
+<li>Trusses belong to the class of skeletal structures and consist of members connected at joints.</li>
+<li>Skeletal structures can be analyzed with a variety of hand-oriented method of structural analysis: displacement and force methods.</li>
+<li>Skeletal structures can also be analyzed by computer-oriented finite element methods (FEM).</li>
+<li>FEM will give the exact same answer as your hand calculation.</li>
+<li>Therefore, truss element structures are the ideal choice to introduce computer-oriented terminology and explain the fully-automated numerical solution method.</li>
+</ul>
+<h2 id="derivation-of-the-stiffness-matrix">Derivation of the Stiffness Matrix<a class="headerlink" href="#derivation-of-the-stiffness-matrix" title="Permanent link">&para;</a></h2>
+<p>Three methods to be introduced:
+1. Direct observations (Trusses)
+2. Unit displacement method (Trusses and beams)
+3. Method of virtual work (All Elements)</p>
+<h3 id="direct-observations">Direct Observations<a class="headerlink" href="#direct-observations" title="Permanent link">&para;</a></h3>
+<p>Bar/Truss elements
+- 1D truss element defined by length L, cross-section A and stiffness E
+<img alt="Screenshot 2022-07-27 151930.png" src="https://supernotes-resources.s3.amazonaws.com/image-uploads/a8270891-b9e5-417f-83ee-8a8179bd5444--Screenshot%202022-07-27%20151930.png" />
+- Truss Stiffness:
+$$
+k = {EA \over L}
+$$</p>
+<ul>
+<li>Equivalent spring stiffness</li>
+<li>Note <span class="arithmatex">\(k = {f / \delta}\)</span>, </li>
+<li>So, force is <span class="arithmatex">\(k \cdot \delta\)</span></li>
+<li><span class="arithmatex">\(u_2 - u_1 = \delta\)</span></li>
+<li>The element is static and so the sum of forces is zero hence <span class="arithmatex">\(f_1 =-f_2\)</span></li>
+<li><strong>So, Force</strong>:</li>
+</ul>
+<p><span class="arithmatex">\(<span class="arithmatex">\(f_2 = k(u_2 - u_1) \\ f_1 = -k(u_2 - u_1)\)</span>\)</span></p>
+<ul>
+<li>Matrix form:</li>
+</ul>
+<div class="arithmatex">\[
+ k \cdot u_1  - k \cdot u_2= f_1 \\ - k \cdot u_1 + k \cdot u_2  = f_2 
+\]</div>
+<p>gives,</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+  k &amp; -k \\
+  -k &amp; k
+\end{bmatrix} 
+\begin{bmatrix}
+  u_1 \\
+  u_2
+\end{bmatrix} 
+=
+\begin{bmatrix}
+  f_1 \\
+  f_2
+\end{bmatrix} 
+\Rightarrow K^e .u^e = f^e
+\]</div>
+<p>e is the element number. So what part of the structure we are considering. We have to calculate this for each element in the structure to get  a full picture.</p>
+<ul>
+<li>K: Element stiffness matrix, u: displacement vector, f: force vector</li>
+<li>Equilibrium: <span class="arithmatex">\(f_1 = -f_2\)</span>, but system is free to move (no boundary conditions)</li>
+</ul>
+<h3 id="stiffness-in-stuctures">Stiffness in Stuctures<a class="headerlink" href="#stiffness-in-stuctures" title="Permanent link">&para;</a></h3>
+<p>A material has a value for stiffness which is given by Youngs modulus. For a structure which will act differently depending on its geometry such as length and cross-sectional area we can use Hooke's law to calculate a structural spring constant.</p>
+<div class="arithmatex">\[
+{F \over \delta} = {EA \over L} = {K} 
+\]</div>
+<p>For a structure with multiple degrees of freedom we need to consider the stiffness in the various directions it can be displaced. </p>
+<p>So for a structure with 3 nodes we need to consider the displacement at node 1 due to a force at node 2, also the displacement at node 1 due to a force at node 2 and so on. We denote this with:</p>
+<p>u: displacement
+F: Force</p>
+<p>so, </p>
+<p>$$
+{F_2 \over u_1 } = K_{21}
+$$
+Which is the displacement at node 1 due to a force at node 2</p>
+<p>We use a matrix to represent all these k values for the various relevant stiffness values.</p>
+<h3 id="method-of-virtual-work">Method of Virtual Work<a class="headerlink" href="#method-of-virtual-work" title="Permanent link">&para;</a></h3>
+<p><strong>Definition:</strong> Virtual displacement is a change in the configuration of a system as
+the result of any arbitrary infinitesimal <strong>‘admissible displacement <span class="arithmatex">\(\delta u\)</span>’</strong> (change
+of the coordinates ) consistent with the forces and constraints imposed on the
+system at a given instant of time.</p>
+<ul>
+<li>
+<p>Most general method (less intuitive), which is used for derivation of stiffness
+matrices for more complex element types (shells, solids).</p>
+</li>
+<li>
+<p>Derivation for truss elements not necessary (can be done by unit
+displacement method), but demonstrates the principle.</p>
+</li>
+<li>
+<p>It is a thought displacement, not a real one, once could say an “as if
+displacement, or “what happens if” displacement.</p>
+</li>
+<li>
+<p>Method of virtual displacement can be traced to Aristotle (384 — 322BC) and
+was mathematically formulated by Bernoulli (1667-1748).</p>
+</li>
+</ul>
+<h4 id="method">Method<a class="headerlink" href="#method" title="Permanent link">&para;</a></h4>
+<p>Truss Elements
+- Truss under virtual end-displacement <span class="arithmatex">\(\delta W_{\mathrm{e}}=\delta W_{\mathrm{int}}\)</span>
+- Virtual work by external (end) forces
+$$
+\delta W_{\mathrm{e}}=f_{1} \delta u_{1}+f_{2} \delta u_{2}
+$$
+- Virtual work of internal forces (elastic deformation):
+$$
+\delta W_{\text {int }}=\int \delta \varepsilon \sigma d V=\int_{0}^{L} \delta \varepsilon E \varepsilon A d x=\delta \varepsilon . E A L \varepsilon \quad \text { with } \quad \varepsilon=\frac{\left(u_{2}-u_{1}\right)}{L} \Rightarrow \delta \varepsilon=\frac{\left(\delta u_{2}-\delta u_{1}\right)}{L}
+$$
+- Force equilibrium:
+$$
+E A L\left[-\frac{\delta u_{1}}{L}\left(\frac{u_{2}-u_{1}}{L}\right)+\frac{\delta u_{2}}{L} \frac{\left(u_{2}-u_{1}\right)}{L}\right]=f_{1} \delta u_{1}+f_{2} \delta u_{2}
+$$
+$$
+\Rightarrow f_{1}=\frac{E A}{L}\left(u_{1}-u_{2}\right) \quad \text {and} \quad f_{2}=-\frac{E A}{L}\left(u_{1}-u_{2}\right)
+$$
+This gives:
+$$
+\frac{E A}{L}\left[\begin{array}{rr}1 &amp; -1 \ -1 &amp; 1\end{array}\right]\left[\begin{array}{l}u_{1} \ u_{2}\end
+{array}\right]=\left[\begin{array}{l}f_{1} \ f_{2}\end{array}\right]
+$$
+Same result as derived earlier where <span class="arithmatex">\(k = {EA \over L}\)</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Jay Dickson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
