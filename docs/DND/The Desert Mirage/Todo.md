@@ -18,3 +18,4 @@
 - Do map of [[mirage city]]
 - Do map of [[ruined city]]
 - Expand the secret society
+- Outline the Shadow Demons role and the motive of whoever is controlling them.
