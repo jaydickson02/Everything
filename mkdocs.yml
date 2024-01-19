@@ -1,7 +1,7 @@
 site_name: Everything
 
 theme:
-    name: 'terminal'
+    name: 'mkdocs-material'
     icon:
         logo: octicons/book-24
     palette:
